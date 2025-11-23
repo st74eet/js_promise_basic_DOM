@@ -14,7 +14,7 @@ const success = () => {
 };
 
 const error = () => {
-  const div = success();
+  const div = document.createElement('div');
 
   div.setAttribute('class', 'message error-message');
   div.textContent = 'Promise was rejected!';
